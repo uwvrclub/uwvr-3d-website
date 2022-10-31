@@ -4,7 +4,7 @@
 `npm i` or `yarn install`
 
 ## Run code on a local server
-`npm run dev`
+`npm run dev` or `yarn run dev`
 
-## Format all files
+## Format all files using prettier
 `npx prettier --write .`
