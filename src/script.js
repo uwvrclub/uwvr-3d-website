@@ -18,7 +18,7 @@ const geometry = new THREE.TorusGeometry(0.7, 0.2, 16, 100)
 // Materials
 
 const material = new THREE.MeshBasicMaterial()
-material.color = new THREE.Color(0xff0000)
+material.color = new THREE.Color(0x0c0cff)
 
 // Mesh
 const sphere = new THREE.Mesh(geometry, material)
@@ -99,6 +99,9 @@ const tick = () => {
 
     // Render
     renderer.render(scene, camera)
+
+    // Placeholder Background Color
+    scene.background = new THREE.Color('#C0D8B5')
 
     // Call tick again on the next frame
     window.requestAnimationFrame(tick)
