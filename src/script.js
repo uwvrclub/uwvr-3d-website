@@ -88,7 +88,7 @@ renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
 
 const clock = new THREE.Clock()
 
-const tick = () => {
+const animate = () => {
     const elapsedTime = clock.getElapsedTime()
 
     // Update objects
@@ -103,8 +103,8 @@ const tick = () => {
     // Placeholder Background Color
     scene.background = new THREE.Color('#C0D8B5')
 
-    // Call tick again on the next frame
-    window.requestAnimationFrame(tick)
+    // Call animate again on the next frame
+    window.requestAnimationFrame(animate)
 }
 
-tick()
+animate()
